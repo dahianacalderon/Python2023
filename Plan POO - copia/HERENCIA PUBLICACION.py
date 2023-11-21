@@ -1,7 +1,6 @@
 
-
 class Publicacion:
-    def init (self, titulo, autor):
+    def __init__(self, titulo, autor):
         self.titulo = titulo
         self.autor = autor
 
@@ -10,13 +9,13 @@ class Publicacion:
 
 # Clase que deriva la herencia de Publicacion
 class Libro(Publicacion):
-    def init (self, titulo, autor, paginas):
+    def __init__(self, titulo, autor, paginas):
         # Llamada al constructor de la clase base
-        super(). init (titulo, autor)
+        super().__init__(titulo, autor)
         self.paginas = paginas
 
     def obtenerInfo(self):
-        # Llamada al metodo de la clase base y extensión
+        # Llamada al método de la clase base y extensión
         return f"{super().obtenerInfo()}, Páginas: {self.paginas}"
 
 # Crear objeto de la clase derivada
@@ -24,3 +23,4 @@ miLibro = Libro(titulo="Python para Principiantes", autor="John Smith", paginas=
 
 # Acceder a los atributos y llamar a los métodos
 print(miLibro.obtenerInfo())  # Salida: Título: Python para Principiantes, Autor: John Smith, Páginas: 200
+
