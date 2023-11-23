@@ -1,7 +1,7 @@
 
 
 class Animal:
-    def __init__(self, nombre):
+    def init (self, nombre):
         self.nombre = nombre
 
     def obtenerInfo(self):
@@ -9,9 +9,9 @@ class Animal:
 
 # Clase derivada que hereda de Animal
 class Perro(Animal):
-    def __init__(self, nombre, raza):
+    def init (self, nombre, raza):
         # Llamada al constructor de la clase base
-        super().__init__(nombre)
+        super(). init (nombre)
         self.raza = raza
 
     def obtenerInfo(self):
@@ -23,7 +23,6 @@ miPerro = Perro(nombre="Buddy", raza="Labrador")
 
 # Acceder a los atributos y llamar a los métodos
 print(miPerro.obtenerInfo())  # Salida: Nombre: Buddy, Raza: Labrador
-
 
 
 
