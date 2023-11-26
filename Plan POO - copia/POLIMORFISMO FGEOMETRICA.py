@@ -1,14 +1,14 @@
 
 
 class FiguraGeometrica:
-    def calcularArea(self):
+    def calcular_area(self):
         pass
 
 class Circulo(FiguraGeometrica):
     def __init__(self, radio):
         self.radio = radio
 
-    def calcularArea(self):
+    def calcular_area(self):
         return 3.14 * self.radio ** 2
 
 class Rectangulo(FiguraGeometrica):
@@ -16,7 +16,7 @@ class Rectangulo(FiguraGeometrica):
         self.base = base
         self.altura = altura
 
-    def calcularArea(self):
+    def calcular_area(self):
         return self.base * self.altura
 
 
